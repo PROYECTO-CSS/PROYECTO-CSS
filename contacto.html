@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Academia Educativa</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Compilado -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header Fijo -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img src="imagenes/Academia-logo.png" alt="Logo Academia Educativa" class="logo">
+                    <span class="nav__brand">Academia Educativa</span>
+                </div>
+                
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="portafolio.html" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="instructores.html" class="nav__link">Instructores</a></li>
+                    <li class="nav__item"><a href="sobre-nosotros.html" class="nav__link">Sobre Nosotros</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--active">Contacto</a></li>
+                </ul>
+                
+                <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="contacto-hero">
+        <div class="contacto-hero__overlay"></div>
+        <div class="contacto-hero__content">
+            <h1 class="contacto-hero__title">
+                Ponte en
+                <span class="contacto-hero__title-accent">Contacto</span>
+            </h1>
+            <p class="contacto-hero__description">
+                Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.
+            </p>
+        </div>
+        
+        <!-- Formas decorativas de fondo -->
+        <div class="contacto-hero__background">
+            <div class="contacto-hero__shape contacto-hero__shape--1"></div>
+            <div class="contacto-hero__shape contacto-hero__shape--2"></div>
+            <div class="contacto-hero__shape contacto-hero__shape--3"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Formulario -->
+    <section class="contacto-section">
+        <div class="container">
+            <div class="contacto-wrapper">
+                <div class="contacto-info">
+                    <h2 class="contacto-info__title">Información de Contacto</h2>
+                    <p class="contacto-info__text">
+                        Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.
+                    </p>
+                    
+                    <div class="contacto-info__items">
+                        <div class="contacto-info__item">
+                            <div class="contacto-info__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contacto-info__item-title">Email</h3>
+                                <a href="mailto:info@academiaeducativa.com" class="contacto-info__item-link">info@academiaeducativa.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-info__item">
+                            <div class="contacto-info__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contacto-info__item-title">Teléfono</h3>
+                                <a href="tel:+51123456789" class="contacto-info__item-link">+51 123 456 789</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-info__item">
+                            <div class="contacto-info__icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contacto-info__item-title">Ubicación</h3>
+                                <p class="contacto-info__item-text">Ica, Perú</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contacto-form" id="contactForm" novalidate>
+                    <h2 class="contacto-form__title">Envíanos un Mensaje</h2>
+                    
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            class="form-input" 
+                            placeholder="Tu nombre completo"
+                            required
+                            minlength="3"
+                        >
+                        <span class="form-error">Por favor, ingresa tu nombre completo (mínimo 3 caracteres)</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="tu@email.com"
+                            required
+                        >
+                        <span class="form-error">Por favor, ingresa un correo electrónico válido</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            class="form-textarea" 
+                            placeholder="Escribe tu mensaje aquí..."
+                            rows="6"
+                            required
+                            minlength="10"
+                        ></textarea>
+                        <span class="form-error">Por favor, escribe un mensaje (mínimo 10 caracteres)</span>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <span class="form-submit__text">Enviar Mensaje</span>
+                        <svg class="form-submit__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="imagenes/Academia-logo.png" alt="Academia Educativa" class="logo">
+                        <span class="footer__brand">Academia Educativa</span>
+                    </div>
+                    <p class="footer__description">
+                        Creando el futuro digital, un proyecto a la vez.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Servicios</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Desarrollo Web</a></li>
+                        <li><a href="#" class="footer__link">Programación</a></li>
+                        <li><a href="#" class="footer__link">Diseño Digital</a></li>
+                        <li><a href="#" class="footer__link">Robótica Educativa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Compañía</h3>
+                    <ul class="footer__links">
+                        <li><a href="sobre-nosotros.html" class="footer__link">Sobre Nosotros</a></li>
+                        <li><a href="instructores.html" class="footer__link">Instructores</a></li>
+                        <li><a href="portafolio.html" class="footer__link">Cursos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:info@academiaeducativa.com" class="footer__link">info@academiaeducativa.com</a></li>
+                        <li><a href="tel:+51123456789" class="footer__link">+51 123 456 789</a></li>
+                        <li class="footer__link">Ica, Perú</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Academia Educativa. Todos los derechos reservados.
+                </p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                    <a href="#" class="footer__legal-link">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JS Principal -->
+    <script src="js/main.js" defer></script>
+    <script src="js/contacto.js" defer></script>
+</body>
+</html>
