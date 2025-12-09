@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia Educativa - Inicio</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: DM Sans + Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS Compilado -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Estilos movidos a css/main.css -->
 </head>
 
 <body>
     <!-- Header Fijo -->
     <header class="header">
+        <!-- Logo colocado al borde izquierdo del header -->
+        <div class="nav__logo nav__logo--edge" aria-label="Academia Educativa">
+            <img src="imagenes/Academia-logo.png" alt="Logo Academia Educativa" class="logo">
+            <span class="nav__brand">Academia</span>
+            <span class="nav__brand brand--accent">Educativa</span>
+        </div>
+
         <div class="container">
             <nav class="nav">
-                <div class="nav__logo">
-                    <img src="imagenes/Academia-logo.png" alt="Logo Academia Educativa" class="logo">
-                    <span class="nav__brand">Academia Educativa</span>
-                </div>
-
                 <ul class="nav__menu">
                     <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
-                    <li class="nav__item"><a href="portafolio.html" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="portafolio.html" class="nav__link">Cursos</a></li>
                     <li class="nav__item"><a href="instructores.html" class="nav__link">Instructores</a></li>
                     <li class="nav__item"><a href="sobre-nosotros.html" class="nav__link">Sobre Nosotros</a></li>
                     <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
@@ -46,33 +50,151 @@
 
     <!-- Sección Hero -->
     <section class="hero" id="inicio">
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-            <h1 class="hero__title">
-                Creamos Experiencias
-                <span class="hero__title-accent">Digitales Excepcionales</span>
-            </h1>
-            <p class="hero__description">
-                Transformamos ideas en soluciones web innovadoras que impulsan el crecimiento de tu negocio
-            </p>
-            <div class="hero__buttons">
-                <button class="btn btn--primary" onclick="window.location.href='sobre-nosotros.html'">
-                    Comenzar Ahora
-                    <svg class="btn__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <button class="btn btn--secondary" onclick="window.location.href='portafolio.html'">Ver
-                    Portafolio</button>
+        <div class="hero__inner">
+            <div class="hero__col">
+                <div class="eyebrow"
+                    style="color:#9fb2c8;margin-bottom:10px;font-weight:600;">+10,000 estudiantes confiaron en
+                    nosotros</div>
+                <h1 class="hero__title">Transforma tu futuro con educación de calidad</h1>
+                <p class="hero__subtitle">Cursos diseñados por profesionales, metodologías prácticas y proyectos reales
+                    para acelerar tu carrera.</p>
+
+                <div class="hero__cta">
+                    <button class="btn btn--primary cta" onclick="location.href='portafolio.html'">Comenzar Ahora
+                    </button>
+                    <button class="btn btn--ghost" onclick="location.href='sobre-nosotros.html'">Ver Demo</button>
+                </div>
+
+                <div class="hero__stats" style="display:flex;gap:18px;flex-wrap:wrap;">
+                    <div style="color:#f9ca3f;font-weight:700;">150+ Cursos</div>
+                    <div style="color:#fff;opacity:.85;">10K+ Estudiantes</div>
+                    <div style="color:#fff;opacity:.85;">98% Satisfacción</div>
+                </div>
+            </div>
+
+            <div class="hero__col hero__media">
+                <div class="hero__card">
+                    <!-- imagen demo desde picsum -->
+                    <img src="https://picsum.photos/520/300?random=102" alt="Ejemplo"
+                        style="border-radius:10px;width:100%;height:200px;object-fit:cover;margin-bottom:12px;">
+                    <div style="display:flex;gap:12px;align-items:center;">
+                        <!-- avatar instructor demo desde picsum -->
+                        <img src="https://picsum.photos/56/56?random=103" alt="Instructor"
+                            style="width:56px;height:56px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(2,6,23,0.3)">
+                        <div>
+                            <div style="font-weight:700;color:#fff">Cursos Premium</div>
+                            <div style="color:rgba(255,255,255,0.75);font-size:0.95rem">Proyectos reales +
+                                mentorías</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Imagen de fondo (simulada con gradiente y formas) -->
-        <div class="hero__background">
-            <div class="hero__shape hero__shape--1"></div>
-            <div class="hero__shape hero__shape--2"></div>
-            <div class="hero__shape hero__shape--3"></div>
+    <!-- Cursos Destacados -->
+    <section class="section" id="cursos">
+        <h2 class="section__title">Cursos Destacados</h2>
+        <p class="section__lead">Aprende con proyectos prácticos y docentes expertos. Aquí algunos cursos
+            seleccionados.</p>
+
+        <div class="courses-grid">
+            <div class="course-card" onclick="location.href='portafolio.html'">
+                <!-- imagenes de curso desde picsum -->
+                <img src="https://picsum.photos/600/360?random=201" alt="Curso 1">
+                <div class="course-title">Desarrollo Web Full Stack</div>
+                <div class="course-meta">Por Carlos Méndez • 40 horas • 4.9 ★</div>
+            </div>
+
+            <div class="course-card" onclick="location.href='portafolio.html'">
+                <img src="https://picsum.photos/600/360?random=202" alt="Curso 2">
+                <div class="course-title">Marketing Digital Avanzado</div>
+                <div class="course-meta">Por Ana García • 32 horas • 4.8 ★</div>
+            </div>
+
+            <div class="course-card" onclick="location.href='portafolio.html'">
+                <img src="https://picsum.photos/600/360?random=203" alt="Curso 3">
+                <div class="course-title">Diseño UX/UI Profesional</div>
+                <div class="course-meta">Por María López • 28 horas • 4.9 ★</div>
+            </div>
+
+            <div class="course-card" onclick="location.href='portafolio.html'">
+                <img src="https://picsum.photos/600/360?random=204" alt="Curso 4">
+                <div class="course-title">Python para Data Science</div>
+                <div class="course-meta">Por Roberto Sánchez • 45 horas • 4.7 ★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas de confianza -->
+    <section class="stats" aria-label="Estadísticas de confianza">
+        <div style="max-width:1100px;margin:0 auto;">
+            <div style="text-align:center;margin-bottom:28px;">
+                <h3 style="font-family:'Playfair Display',serif;color:#fff;font-size:2rem;margin:0;">Números que
+                    hablan</h3>
+                <p style="color:rgba(255,255,255,0.75);margin-top:8px;">Años transformando carreras con educación
+                    práctica y soporte real.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div>
+                        <span class="stat-number" data-target="150" aria-live="polite">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <div>Cursos Disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div>
+                        <span class="stat-number" data-target="10000" aria-live="polite">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <div>Estudiantes Activos</div>
+                </div>
+                <div class="stat-item">
+                    <div>
+                        <span class="stat-number" data-target="98" aria-live="polite">0</span><span class="stat-suffix">%</span>
+                    </div>
+                    <div>Tasa de Éxito</div>
+                </div>
+                <div class="stat-item">
+                    <div>
+                        <span class="stat-number" data-target="25" aria-live="polite">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <div>Países</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <h2 class="section__title">Lo que dicen nuestros estudiantes</h2>
+        <p class="section__lead">Historias reales de éxito de personas que transformaron su carrera con nosotros.
+        </p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div style="color:#f59e0b;font-weight:700;margin-bottom:8px;">★★★★★</div>
+                <p class="quote">"Gracias a Academia Edu pude hacer la transición de carrera que siempre soñé. Los cursos
+                    me dieron las herramientas necesarias para conseguir mi trabajo actual."</p>
+                <div class="author">Laura Martínez</div>
+                <div class="role">Diseñadora UX en TechCorp</div>
+            </div>
+
+            <div class="testimonial">
+                <div style="color:#f59e0b;font-weight:700;margin-bottom:8px;">★★★★★</div>
+                <p class="quote">"La calidad de los instructores es excepcional. Aprendí desarrollo web desde cero y ahora
+                    trabajo como desarrollador senior."</p>
+                <div class="author">Miguel Ángel Ruiz</div>
+                <div class="role">Desarrollador Full Stack en StartupX</div>
+            </div>
+
+            <div class="testimonial">
+                <div style="color:#f59e0b;font-weight:700;margin-bottom:8px;">★★★★★</div>
+                <p class="quote">"La metodología práctica y los casos reales hicieron la diferencia. Recomendado
+                    100%."</p>
+                <div class="author">Carmen López</div>
+                <div class="role">Marketing Manager en Digital Agency</div>
+            </div>
         </div>
     </section>
 
@@ -82,7 +204,7 @@
             <div class="footer__content">
                 <div class="footer__section">
                     <div class="footer__logo">
-                        <img src="imagenes/Academia-logo.png" alt="Academia Educativa" class="logo">
+                        <img src="imagenes/logprueba.png" alt="Academia Educativa" class="logo">
                         <!-- Marca dividida para aplicar color azul + naranja -->
                         <span class="footer__brand">
                             <span class="brand--primary">Academia</span><span class="brand--accent">Educativa</span>
@@ -91,32 +213,6 @@
                     <p class="footer__description">
                         Transformando vidas a través de la educación de calidad. Únete a nuestra comunidad y alcanza tus metas profesionales.
                     </p>
-
-                    <!-- Mantengo los iconos aqui, pero con posicion absoluta en CSS -->
-                    <div class="footer__social">
-                        <a href="#" class="footer__social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white" />
-                            </svg>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="footer__section">
@@ -157,9 +253,41 @@
                     <a href="#" class="footer__legal-link">Política de Privacidad</a>
                     <a href="#" class="footer__legal-link">Términos de Servicio</a>
                 </div>
+
+                <!-- Social icons: ahora dentro de la barra inferior, alineados a la derecha -->
+                <div class="footer__social" aria-label="Síguenos en redes">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Count-up moved to js/countup.js -->
+    <script src="js/countup.js" defer></script>
+
+    <!-- Menu toggle (mobile) -->
+    <script src="js/menu-toggle.js" defer></script>
 
     <!-- JS Principal -->
     <script src="js/main.js" defer></script>
